@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_No-12</title>
+    <style>
+        *{
+            margin: 0px;
+           
+        }
+        .container{
+            width: 100%;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+        .main{
+            width: 220PX;
+            height: 80PX;
+            animation-name: sample;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+       
+        @keyframes sample{
+            0%{
+                margin-left: 0%;
+            }
+            50%{
+                margin-left: 85%;
+            }
+            100%{
+                margin-left: 0%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+    <h1>Watch me move</h1>
+</div>
+    <p>This Example shows ho to use CSS animations to make H1 elements move across the page.</p>
+    <p>In addition, we output some text each time an animation event fiers, so you can see them in an action.</p>
+    <ul>
+        <li>Started:elapsed time is zero</li>
+        <li>New Loop Started at time 3</li>
+        <li>New Loop Started at time 6</li>
+    </ul>
+</div>
+</body>
+</html>
